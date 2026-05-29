@@ -98,7 +98,7 @@ function AutoTextarea({
   onChange: (v: string) => void;
   onSubmit: () => void;
   disabled: boolean;
-  textareaRef: React.RefObject<HTMLTextAreaElement | null>;
+  textareaRef: React.RefObject<HTMLTextAreaElement>;
 }) {
   const handleInput = (e: React.ChangeEvent<HTMLTextAreaElement>) => {
     onChange(e.target.value);
